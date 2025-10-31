@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paidruem||Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="play_music_.css">
+</head>
+<body>
+     <header>
+        <nav>
+           <div class="logo">
+            LOGO
+           </div>
+           <div class="menu">
+            <a href="indext.html">Home</a>
+            <a href="read_article.html">Read Article</a>
+            <a href="task.html">Task</a>
+            <a href="redeem.html">Redeem</a>
+            <a href="play_music.html">Play music</a>
+            <a href="whatsapp_biding.html">Whatsap biding</a>
+           </div>
+           <div class="buttons">
+            <button class="LOGINbtn">LOGIN</button>
+           </div>
+        </nav>
+<!-- MUSIC CONTAINERS SECTION-->
+ <section class="music-section">
+     <div class="container">
+    <div class="header">
+      <div class="cover" aria-hidden="true">COVER</div>
+      <div class="meta">
+        <h1>Midnight Drive — Moonlit Mix</h1>
+        <p class="lead">
+          A slow-burning collection of late-night R&B, lo-fi beats, and modern soul — perfect for lone drives, city lights, and thinking about things. Curated for focus + feeling.
+        </p>
+        <div class="actions">
+          <a class="btn spotify" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open in Spotify">▶ Open in Spotify</a>
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open in Apple Music"> Apple Music</a>
+          <a class="btn" href="#" id="shareBtn" aria-label="Copy share link">🔗 Copy link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" role="region" aria-label="Track list">
+      <ol class="tracklist">
+        <li class="track">
+          <div class="index">1</div>
+          <div class="track-info">
+            <p class="track-title">Night Bloom — Artist Name</p>
+            <p class="track-artist">Artist • Album • 3:42</p>
+            <p class="track-blurb">
+              A warm opener with slow synths and close-mic vocals — sets the nocturnal mood and eases you into the ride.
+            </p>
+          </div>
+        </li>
+
+        <li class="track">
+          <div class="index">2</div>
+          <div class="track-info">
+            <p class="track-title">Streetlight Serenade — Another Artist</p>
+            <p class="track-artist">Artist • Single • 4:05</p>
+            <p class="track-blurb">
+              A minimal beat and a sticky chorus; perfect when the highway is empty and the skyline glows.
+            </p>
+          </div>
+        </li>
+
+        <li class="track">
+          <div class="index">3</div>
+          <div class="track-info">
+            <p class="track-title">Quiet Confessions — Third Artist</p>
+            <p class="track-artist">Artist • Album • 2:56</p>
+            <p class="track-blurb">
+              Acoustic textures and late-night confessionals — the emotional center of the playlist.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <footer>
+      <small>Curated by Your Name • Updated Oct 29, 2025</small>
+    </footer>
+  </div>
+    <script>
+    // Copy playlist link
+    document.getElementById('shareBtn').addEventListener('click', function() {
+      const dummyLink = window.location.href;
+      navigator.clipboard?.writeText(dummyLink).then(() => {
+        this.textContent = '✅ Link copied';
+        setTimeout(() => (this.textContent = '🔗 Copy link'), 1400);
+      }).catch(() => {
+        alert('Copy failed — here is the link: ' + dummyLink);
+      });
+    });
+  </script>
+    
+ </section>
+    <!-- FOOTTER STARTED-->
+     <footer class="footters">
+        <h1>Contact US</h1>
+        <div class="footter-details">
+            <div class="details">
+                <h1>Contact Informations</h1>
+                <p>Address: <strong> 334 Iwofe Road, Port Harcourt, Rivers State</strong></p>
+                <p>Email: <strong> contact@Paidruem.com</strong></p>
+                <p>Tel: <strong> +234919589485, +3454049505</strong></p>
+            </div>
+            <div class="details">
+                <h1>Short Link</h1>
+                <div class="links">
+                    <a href="indext.html">Home</a>
+                    <a href="read_article.html">Read Article</a>
+                    <a href="task.html">Task</a>
+                    <a href="redeem.html">Redeem</a>
+                    <a href="play_music.html">Play music</a>
+                    <a href="whatsapp_biding.html">Whatsap biding</a>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        @copyright Paidruem 2025
+     </footer>
+</body>
+</html>
